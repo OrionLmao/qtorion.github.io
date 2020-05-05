@@ -58,65 +58,96 @@ li {
     text-align: right;
 }
 
-section {
-    text-align: center;
-    padding: 8%;
-}
-
 section header {
     margin-top: 0px;
     font-family: 'Roboto Thin';
     font-size: 62px;
     margin-bottom: 20px;
-    text-align: center;
-    position: relative;
 }
 
-.contact {
+.home {
+    margin-top: 220px;
+}
+
+.games {
     margin-top: 20px;
 }
 
-figure{
-    size: 100%;
+section {
+    text-align: center;
+    padding: 8%;
 }
 
-section div {
+section nav {
     font-family: 'Roboto Thin';
-    font-size: 32px;
+    font-size: 36px;
     line-height: 55px;
     text-align: left;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0 0 0;
+}
+
+section .mybutton {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #151D21;
+    background: #ff7a7a;
+    display: inline-flex;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 5px;
 }
 
 .features {
-    padding: 8%;
-    clear: both;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+	color: gray;
+	padding: 20px;
+	display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -90px;
 }
 
 .features figure {
-    display: inline-block;
-    width: auto;
     margin: auto;
-    padding: 25px;
-    margin: 2px;
-    position: relative;
-    top: -200px;
+    padding: 5px;
+	text-align: center;
+    width: 300px;
 }
 
 .features figure img {
 	border-radius: 50%;
-	width: 75px;
-	height: 75px;
+	width: 300px;
+	height: 300px;
 }
 
 figure img:hover {
     filter: brightness(0.7);
+}
+
+figure figcaption {
+    font-family: 'Roboto Black';
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+figure figcaption a:hover {
+    color: gray;
+}
+
+section .mybutton:hover {
+    background: white;
+    font-size: 26px;
+    margin-top: 29px;
+}
+
+.par {
+    margin-top: 500px;
+    height: 650px;
 }
 
 footer {
@@ -129,16 +160,7 @@ footer {
 }
 
 @media screen and (max-width: 1140px) {
-    .features figure img {
-        width: 50px;
-        height: 50px;
-    }
-
-    li {
-        font-size: 24px;
-    }
-
-    section div {
+    section nav {
         font-family: 'Roboto Thin';
         font-size: 24px;
         line-height: 36px;
@@ -146,42 +168,68 @@ footer {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
-        margin: 50px;
+    }
+
+    li {
+        font-size: 24px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -40px;
+    }
+
+    .features figure img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }    
+
+    figure figcaption {
+        font-family: 'Roboto Black';
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 100px;
     }
 }
 
 @media screen and (max-width: 760px) {
-    .features figure img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .features figure {
-        top: -150px;
+    .features {
+        display: block;
     }
 
     li {
         font-size: 14px;
     }
-    
+
     section header {
-        font-size: 36px;
+        font-size: 42px;
     }
 
-    .contact {
+    .games {
         margin-top: 50px;
     }
 
-    section div {
-        font-family: 'Roboto Thin';
-        font-size: 16px;
-        line-height: 24px;
-        text-align: left;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px;
+    .features figure:first-child {
+        padding-top: 100px;
     }
+
+    section nav {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+    header .logo a {
+        height: 50px;
+	    width: 60px;
+        background-size: 50px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -189,7 +237,18 @@ footer {
         font-size: 12px;
     }
 
-    .features figure {
-        padding: 65px 10px;
+    section nav {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    section .mybutton {
+        font-size: 12px;
+    }
+
+    section .mybutton:hover {
+        background: white;
+        font-size: 14px;
+        margin-top: 29px;
     }
 }
