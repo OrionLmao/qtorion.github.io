@@ -76,8 +76,12 @@ section header {
     margin-top: 20px;
 }
 
-figure{
-    size: 50%;
+figure {
+    size: 10cm;
+}
+
+section {
+    size: 10;
 }
 
 section div {
